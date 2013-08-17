@@ -1,0 +1,29 @@
+{
+    "name": "marduke182/twig-bundle",
+    "type": "symfony-bundle",
+    "description": "Make Extensions to twig Template",
+    "keywords": ["twig", "extension"],
+    "homepage": "https://github.com/marduke182/twig-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jesús Quintana",
+            "email": "jesus.quintana@synergy-gb.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.3.*",
+        "guzzle/guzzle": "~3.1.1"
+
+    },
+    "require-dev": {
+        "symfony/finder": "2.3.*"
+
+    },
+    "autoload": {
+        "psr-0": { "Marduke182\\TwigBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Marduke182/TwigBundle"
+}
