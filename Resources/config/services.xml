@@ -9,7 +9,7 @@
     </parameters>
 
     <services>
-        <service id="synergy.requester" class="%synergy.httpclient.class%">
+        <service id="marduke182.requester" class="%marduke182.httpclient.class%">
             <argument type="service" id="security.context"/>
         </service>
     </services>
