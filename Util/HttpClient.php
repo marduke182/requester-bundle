@@ -22,7 +22,7 @@ class HttpClient extends ContainerAware{
         $this->session = $session->getToken()->getUser();
     }
 
-    public static $base_url = "http://uniser.dev/app_dev.php/api/";
+    public static $base_url = "";
     public static $headers = array(
         "Content-Type" => "text/plain",
         "Accept" => "application/json",
@@ -94,7 +94,8 @@ class HttpClient extends ContainerAware{
             $json = json_decode($response->getBody());
             $error = json_last_error();
             return $json;
-        } catch (Guzzle\Http\Exception\BadResponseException $e) {
+
+        } catch (BadResponseException $e) {
             return (object) HttpClient::buildResponse(HttpClient::$errors["900"]["error_message"], $code = "900", $success = false);
         }
     }

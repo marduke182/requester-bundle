@@ -1,9 +1,9 @@
 {
-    "name": "marduke182/twig-bundle",
+    "name": "marduke182/requester-bundle",
     "type": "symfony-bundle",
     "description": "Make Extensions to twig Template",
     "keywords": ["twig", "extension"],
-    "homepage": "https://github.com/marduke182/twig-bundle",
+    "homepage": "https://github.com/marduke182/requester-bundle",
     "license": "MIT",
     "authors": [
         {
@@ -22,8 +22,8 @@
 
     },
     "autoload": {
-        "psr-0": { "Marduke182\\TwigBundle": "" }
+        "psr-0": { "Marduke182\\RequesterBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Marduke182/TwigBundle"
+    "target-dir": "Marduke182/RequesterBundle"
 }
